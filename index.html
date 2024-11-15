@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mercedes Park Hotel. Ubicado en Villa Mercedes, San Luis. Habitaciones de primera, excelente ubicación y atención de calidad.">
+  <meta name='copyright' content='DNA Software'>
+  <meta name='language' content='ES'>
+  <meta name='keywords' content='hotel, villa, mercedes, san, luis, alojamiento, turismo, hoteles, mercedes, park, parque, estacionamiento, cubierto, hoteleria, vacacionar, vacaciones, verano, quincena, habitacion, habitaciones, temporal, vacacional, pileta, bufet, confiteria, premium, primera, calidad'>
+  <meta name='pagename' content="Mercedes Park Hotel">
+  <link rel="icon" href="res/logomph.png" type="image/png">
+
+  <script src="js/index.js"></script>
+
+  <script src="https://kit.fontawesome.com/05e35e8e14.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <title>Mercedes Park Hotel</title>
+  <style>
+
+    /* ESTILOS DEL LOGO */
+    .logo-container {
+      width: 50%; /* Ajustar tamaño del contenedor del logo */
+      max-width: 150px; /* Tamaño máximo si deseas restringirlo */
+    }
+
+    #Layer_2 {
+      width: 100%;
+      height: auto; /* Esto mantiene la proporción del SVG */
+    }
+    /*=========================================*/
+
+  </style>
+</head>
+<body>
+
+  
+   <header>
+    <!-- Con este nav fijate que vas a poder implementar ambos planteos (Sugiero que sea fixed al top y un background transparente. Al hacer scroll podria tomar color) -->
+    <nav>
+      <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
+      <div class="logo-container">
+        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
+          <defs>
+            <style>
+              .cls-1 {
+                font-family: PlayfairDisplay-BlackItalic, 'Playfair Display';
+                font-size: 12.3px;
+                font-style: italic;
+                font-weight: 800;
+              }
+        
+              .cls-1, .cls-2 {
+                fill: #000;
+              }
+        
+              .cls-2 {
+                stroke-width: 0px;
+              }
+            </style>
+          </defs>
+          <g id="Layer_1-2" data-name="Layer 1">
+            <text class="cls-1" transform="translate(.58 20.66)"><tspan x="0" y="0">MPH</tspan></text>
+            <g>
+              <polygon class="cls-2" points="16.06 7.38 16.5 8.76 17.95 8.76 16.78 9.61 17.23 10.99 16.06 10.14 14.88 10.99 15.33 9.61 14.16 8.76 15.61 8.76 16.06 7.38"/>
+              <polygon class="cls-2" points="19.61 8.84 19.87 9.66 20.73 9.66 20.04 10.17 20.3 10.99 19.61 10.48 18.91 10.99 19.18 10.17 18.48 9.66 19.34 9.66 19.61 8.84"/>
+              <polygon class="cls-2" points="12.39 8.84 12.66 9.66 13.52 9.66 12.83 10.17 13.09 10.99 12.39 10.48 11.7 10.99 11.96 10.17 11.27 9.66 12.13 9.66 12.39 8.84"/>
+            </g>
+            <path class="cls-2" d="M6.51,11.36c.03-8.67,14.93-11.13,18.49-3.45.53,1.07.77,2.33.49,3.45h-.2c-.61-2.11-2.07-3.53-3.72-4.57-3.34-2.28-7.93-2.52-11.45-.38-1.78,1.01-3.25,2.77-3.41,4.95h-.2Z"/>
+            <path class="cls-2" d="M14.16,3.05c.03-1.77,1.55-3.15,3.24-3.04,1.61.11,2.9,1.55,2.82,3.23-.71-.23-1.72-.48-2.95-.53-1.29-.05-2.36.14-3.11.34Z"/>
+          </g>
+        </svg>
+      </div>
+      <!-- FIN SVG LOGO -->
+       <div class="menu-navigator">
+        <ul class="menu">
+          <li class="menu-item active">Inicio</li>
+          <li class="menu-item">Servicios</li>
+          <li class="menu-item">Sobre Nosotros</li>
+        </ul>
+       </div>
+    </nav>
+   </header>
+
+   <main>
+    <section id="landing-view">
+
+      <article id="presentation">
+        <h1>Mercedes Park Hotel</h1>
+
+        <div><em>"El placer de descansar en la cuna de la Calle Angosta"</em></div>
+
+        <div>
+          <p>Escápate a la comodidad y el encanto de Mercedes Park Hotel, el lugar ideal para familias en el corazón de Villa Mercedes. Disfruta de un ambiente acogedor con habitaciones amplias y modernas, desayuno incluido cada mañana, y una refrescante piscina para toda la familia.</p>
+
+          <a href="#" hreflang="ES" target="_self" rel="noopener noreferrer" title="Contacto"><button>Contacto</button></a>
+        </div>
+
+        <div id="stats-container">
+          <div id="stats-service-years">
+            <span>7</span>
+            <span>Años de servicio</span>
+          </div>
+          <div id="stats-rooms">
+            <span>32</span>
+            <span>Habitaciones</span>
+          </div>
+          <div id="stats-visitors">
+            <span>+1500</span>
+            <span>Estadías felices</span>
+          </div>
+        </div>
+
+        <!-- Aca van a estar las imagenes de los slides -->
+        <div id="carrusel-cards">
+          <!-- En resoluciones pequeñas te dejo imagenes oscuras, para que matchee los colores mejor (Ajustar min-width) | Seguro hay que hacer ajuste de tamaño o modificarlas -->
+          <!-- Por defecto, se muestra la imagen del img, cuando la resolucion de la pantalla alcance el min-width, se va a mostrar el source correspondiente (Se pueden agregar multiples source tags para diferentes resoluciones) -->
+          <picture data-description="Sumérgete en nuestra espectacular piscina, el corazón de nuestro hotel, rodeada de exuberantes jardines y un entorno de tranquilidad absoluta." 
+          class="active picture-container">
+            <source media="(min-width:500px)" srcset="res/enviroment/frente-hotel-1.jpg"> 
+            <img src="res/enviroment/frente-hotel-2.jpg" alt="Mercedes Park Hotel" style="width:auto;">
+          </picture>
+          <picture data-description="Sumérgete en nuestra espectacular piscina, el corazón de nuestro hotel, rodeada de exuberantes jardines y un entorno de tranquilidad absoluta."
+          class="picture-container">
+            <source media="(min-width:500px)" srcset="res/pool/pileta-8.png">
+            <img src="res/pool/pileta-nocturna-1.jpg" alt="Piscina Mercedes Park Hotel" style="width:auto;">
+          </picture>
+          <picture data-description="Sumérgete en nuestra espectacular piscina, el corazón de nuestro hotel, rodeada de exuberantes jardines y un entorno de tranquilidad absoluta."
+          class="picture-container">
+            <source media="(min-width:465px)" srcset="res/rooms/habitacion-doble-5.jpg">
+            <img src="res/rooms/habitacion-doble-4.jpg" alt="Habitaciones Mercedes Park Hotel" style="width:auto;">
+          </picture>
+        </div>
+      </article>
+
+      <article id="carrusel-active-card"> <!-- Para facilitar el desarrollo del carrusel, sugiero que el texto este encima de la imagen y no sea un background del div -->
+        <div>
+          <div>
+            <img id="carrusel-card-image" src="" alt="">
+          </div>
+          <p id="carrusel-card-description"></p>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="services-view">
+      <h2>Servicios</h2>
+      <article id="services-grid-container">
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+        <div class="grid-item">
+          <div class="bkg-services"></div>
+          <i></i>
+          <span>service description</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="location">
+      <h2>Cómo llegar</h2>
+      <article id="map-continer">
+        <div>
+          <div>
+            <a href="https://www.google.com/maps/place/Hotel+Mercedes+Park/@-33.689222,-65.4666371,17z/data=!3m1!4b1!4m9!3m8!1s0x95d16a9a0cf82c41:0x29cfa75d94c50424!5m2!4m1!1i2!8m2!3d-33.6892265!4d-65.4640622!16s%2Fg%2F1tj349zh?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D" hreflang="ES" target="_blank" rel="noopener noreferrer" title="Obtener ubicación"><button>Obtener ubicación</button></a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.762167025524!2d-65.4666371253014!3d-33.68922200977824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d16a9a0cf82c41%3A0x29cfa75d94c50424!2sHotel%20Mercedes%20Park!5e0!3m2!1sen!2sar!4v1731675798087!5m2!1sen!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </article>
+    </section>
+
+    <section id="instalaciones">
+      <h2>Instalaciones</h2>
+      <article id="carrusel-instalaciones-container">
+        <button id="prev">atras</button>
+        <div id="carrusel-instalaciones">
+          <div id="card-instalaciones-prev"><img></div>
+          <div id="card-instalaciones-current"><img></div>
+          <div id="card-instalaciones-next"><img></div>
+        </div>
+        <button id="next">adelante</button>
+      </article>
+      <p id="carrusel-instalaciones-description"></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <article>
+        <form action="" method="post" name="contact-form" id="contact-form"> 
+          <div id="form-errors-container"></div>
+          <label for="mail">Correo</label>
+          <input type="text" name="mail" id="inp-mail" placeholder="ejemplo@correo.com">
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="inp-message" cols="30" rows="10"></textarea>
+        </form>
+        <button type="submit" form="contact-form">Reservar</button>
+      </article>
+    </section>
+
+   </main>
+
+   <footer>
+    <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
+    <div class="logo-container">
+      <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
+        <defs>
+          <style>
+            .cls-1 {
+              font-family: PlayfairDisplay-BlackItalic, 'Playfair Display';
+              font-size: 12.3px;
+              font-style: italic;
+              font-weight: 800;
+            }
+      
+            .cls-1, .cls-2 {
+              fill: #000;
+            }
+      
+            .cls-2 {
+              stroke-width: 0px;
+            }
+          </style>
+        </defs>
+        <g id="Layer_1-2" data-name="Layer 1">
+          <text class="cls-1" transform="translate(.58 20.66)"><tspan x="0" y="0">MPH</tspan></text>
+          <g>
+            <polygon class="cls-2" points="16.06 7.38 16.5 8.76 17.95 8.76 16.78 9.61 17.23 10.99 16.06 10.14 14.88 10.99 15.33 9.61 14.16 8.76 15.61 8.76 16.06 7.38"/>
+            <polygon class="cls-2" points="19.61 8.84 19.87 9.66 20.73 9.66 20.04 10.17 20.3 10.99 19.61 10.48 18.91 10.99 19.18 10.17 18.48 9.66 19.34 9.66 19.61 8.84"/>
+            <polygon class="cls-2" points="12.39 8.84 12.66 9.66 13.52 9.66 12.83 10.17 13.09 10.99 12.39 10.48 11.7 10.99 11.96 10.17 11.27 9.66 12.13 9.66 12.39 8.84"/>
+          </g>
+          <path class="cls-2" d="M6.51,11.36c.03-8.67,14.93-11.13,18.49-3.45.53,1.07.77,2.33.49,3.45h-.2c-.61-2.11-2.07-3.53-3.72-4.57-3.34-2.28-7.93-2.52-11.45-.38-1.78,1.01-3.25,2.77-3.41,4.95h-.2Z"/>
+          <path class="cls-2" d="M14.16,3.05c.03-1.77,1.55-3.15,3.24-3.04,1.61.11,2.9,1.55,2.82,3.23-.71-.23-1.72-.48-2.95-.53-1.29-.05-2.36.14-3.11.34Z"/>
+        </g>
+      </svg>
+    </div>
+    <!-- FIN SVG LOGO -->
+
+    <div class="footer-content">
+      <div class="list-container">
+        <span>CONTACTO</span>
+        <i><i class="fas fa-map-marker-alt"></i> Villa Mercedes, San Luis, Argentina</i>
+        <i><i class="fas fa-phone-alt"></i> +54 9 11 1234-5678</i>
+        <i><i class="fas fa-envelope"></i> 2f9vZ@example.com</i>
+      </div>
+      <nav class="list-container">
+        <span>HOTEL</span>
+        <ul id="ul-map-site">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Servicio</a></li>
+        </ul>
+      </nav>
+    </div>
+   </footer>
+
+</body>
+</html>

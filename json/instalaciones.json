@@ -1,0 +1,30 @@
+{
+  "items":[
+    {
+      "src" : "res/enviroment/confiteria-general-7.jpg",
+      "alt" : "confiteria Mercedes Park Hotel",
+      "description" : "Visita nuestra confiteria con nuestros deliciosos platillos y bebidas."
+    },
+    {
+      "src" : "res/enviroment/comedor-general-3.jpg",
+      "alt" : "comedor Mercedes Park Hotel",
+      "description" : "Contamos con un amplio espacio para comer y disfrutar"
+    },
+    {
+      "src" : "res/enviroment/cochera-1.jpg",
+      "alt" : "cochera Mercedes Park Hotel",
+      "description" : "Podes guardar tu vehiculo en nuestro amplio estacionamiento techado"
+    },
+    {
+      "src" : "res/rooms/habitacion-triple-2.jpg",
+      "alt" : "habitaciones Mercedes Park Hotel",
+      "description" : "Conoce la comodidad de alojarte en una de nuestras habitaciones"
+    },
+    {
+      "src" : "res/pool/pileta-5.jpg",
+      "alt" : "pileta Mercedes Park Hotel",
+      "description" : "Disfruta de nuestra pileta y reposeras en la comodidad de tu alojamiento"
+    }
+  ],
+  "totalRows" : "5"
+}
