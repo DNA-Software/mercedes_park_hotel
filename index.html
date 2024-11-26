@@ -10,6 +10,8 @@
   <meta name='pagename' content="Mercedes Park Hotel">
   <link rel="icon" href="res/logomph.png" type="image/png">
 
+  <link rel="stylesheet" href="css/global.min.css">
+
   <script src="js/index.js"></script>
 
   <script src="https://kit.fontawesome.com/05e35e8e14.js" crossorigin="anonymous"></script>
@@ -35,10 +37,9 @@
 </head>
 <body>
 
-  
    <header>
     <!-- Con este nav fijate que vas a poder implementar ambos planteos (Sugiero que sea fixed al top y un background transparente. Al hacer scroll podria tomar color) -->
-    <nav>
+    <nav class="container">
       <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
       <div class="logo-container">
         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
@@ -50,11 +51,11 @@
                 font-style: italic;
                 font-weight: 800;
               }
-        
+
               .cls-1, .cls-2 {
                 fill: #000;
               }
-        
+
               .cls-2 {
                 stroke-width: 0px;
               }
@@ -84,7 +85,7 @@
    </header>
 
    <main>
-    <section id="landing-view">
+    <section id="landing-view" class="container">
 
       <article id="presentation">
         <h1>Mercedes Park Hotel</h1>
@@ -145,7 +146,7 @@
 
     </section>
 
-    <section id="services-view">
+    <section id="services-view" class="container">
       <h2>Servicios</h2>
       <article id="services-grid-container">
         <div class="grid-item">
@@ -191,7 +192,7 @@
       </article>
     </section>
 
-    <section id="location">
+    <section id="location" class="container">
       <h2>Cómo llegar</h2>
       <article id="map-continer">
         <div>
@@ -203,7 +204,7 @@
       </article>
     </section>
 
-    <section id="instalaciones">
+    <section id="instalaciones" class="container">
       <h2>Instalaciones</h2>
       <article id="carrusel-instalaciones-container">
         <button id="prev">atras</button>
@@ -217,7 +218,7 @@
       <p id="carrusel-instalaciones-description"></p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container">
       <h2>Contacto</h2>
       <article>
         <form action="" method="post" name="contact-form" id="contact-form"> 
@@ -233,7 +234,7 @@
 
    </main>
 
-   <footer>
+   <footer class="container">
     <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
     <div class="logo-container">
       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
@@ -245,11 +246,11 @@
               font-style: italic;
               font-weight: 800;
             }
-      
+
             .cls-1, .cls-2 {
               fill: #000;
             }
-      
+
             .cls-2 {
               stroke-width: 0px;
             }

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* Estilos globales para todas las páginas */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #F5EEE4;
+}
+
+.container {
+  background-color: red;
+}

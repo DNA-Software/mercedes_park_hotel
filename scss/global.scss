@@ -1,0 +1,39 @@
+// Importar abstractos
+@import "abstracts/_variables.scss";
+@import "abstracts/_mixins.scss";
+
+/* Estilos globales para todas las páginas */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: var(--clr-bg);
+}
+
+.container {
+  max-width: calc(100% - (1.5rem * 2));
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktop {
+    max-width: calc(100% - (3rem * 2));
+  }
+
+  @include large-desktop {
+    max-width: 80rem;
+  }
+}
+
+// TODO: Borrar
+img {
+  max-width: 100%;
+  height: auto;
+}
+#map-continer {
+  overflow: hidden;
+}

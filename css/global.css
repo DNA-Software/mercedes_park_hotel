@@ -1,0 +1,45 @@
+@charset "UTF-8";
+:root {
+  --clr-bg: #F5EEE4;
+  --clr-primary: #780524;
+  --clr-secondary: #52131E;
+  --clr-dark: #181211;
+}
+
+/* Estilos globales para todas las páginas */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--clr-bg);
+}
+
+.container {
+  max-width: calc(100% - 3rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 64rem) {
+  .container {
+    max-width: calc(100% - 6rem);
+  }
+}
+@media (min-width: 90rem) {
+  .container {
+    max-width: 80rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#map-continer {
+  overflow: hidden;
+}
