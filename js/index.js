@@ -49,7 +49,7 @@ function desplazamientoCards() { // logica para el desplazamiento automatico del
   carruselTimeout = setTimeout(() => {
     let nextCard = cardIndex + 1;
 
-    if (nextCard == pictures.length) 
+    if (nextCard == pictures.length)
       nextCard = 0;
 
     pictures[cardIndex].classList.remove("active");
@@ -148,7 +148,7 @@ function instalacionesManual(index){ // Desplazamiento manual del carrusel de in
 // Handler del formulario de contacto
 function preventEvent(event, form){ // Maneja las validaciones del formulario y llama al envio del endpoint
   event.preventDefault();
-  
+
   const mail = form.querySelector("input[name='mail']").value;
   const message = form.querySelector("textarea[name='message']").value;
 
@@ -172,7 +172,7 @@ function preventEvent(event, form){ // Maneja las validaciones del formulario y 
   if(errors.length > 0){
     mostrarErrores(errors);
     return;
-  } 
+  }
 
   // FIN DE VALIDACIONES
   document.getElementById("form-errors-container").innerHTML = ""; // Aca depende de si queres esconder el div o solo eliminar el mensaje (ya se elimina el ul)
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
   pictures = document.querySelectorAll(".picture-container");
 
   cargarHandlers();
-  
+
   mostrarCard(pictures[cardIndex]);
 
   cargarDatosInstalaciones();

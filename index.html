@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/global.min.css">
 
   <script src="js/index.js"></script>
+  <script src="js/navToggleHandler.js" defer></script>
 
   <script src="https://kit.fontawesome.com/05e35e8e14.js" crossorigin="anonymous"></script>
 
@@ -40,6 +41,7 @@
    <header>
     <!-- Con este nav fijate que vas a poder implementar ambos planteos (Sugiero que sea fixed al top y un background transparente. Al hacer scroll podria tomar color) -->
     <nav class="container">
+
       <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
       <div class="logo-container">
         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
@@ -50,10 +52,6 @@
                 font-size: 12.3px;
                 font-style: italic;
                 font-weight: 800;
-              }
-
-              .cls-1, .cls-2 {
-                fill: #000;
               }
 
               .cls-2 {
@@ -74,13 +72,21 @@
         </svg>
       </div>
       <!-- FIN SVG LOGO -->
-       <div class="menu-navigator">
+
+      <div class="menu-navigator">
         <ul class="menu">
-          <li class="menu-item active">Inicio</li>
-          <li class="menu-item">Servicios</li>
-          <li class="menu-item">Sobre Nosotros</li>
+          <li class="menu-item active"><a href="#">Inicio</a></li>
+          <li class="menu-item"><a href="#">Servicios</a></li>
+          <li class="menu-item"><a href="#">Sobre Nosotros</a></li>
         </ul>
-       </div>
+      </div>
+
+      <button type="button" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </nav>
    </header>
 
