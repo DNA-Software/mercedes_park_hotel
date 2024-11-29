@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --clr-bg: #F5EEE4;
   --clr-primary: #780524;
@@ -78,13 +79,32 @@ nav .menu-navigator .menu {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   color: var(--clr-gold);
   font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+}
+nav .menu-navigator .menu li {
+  position: relative;
+}
+nav .menu-navigator .menu li:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 0.15rem;
+  background-color: var(--clr-gold);
+  margin-top: 0.25rem;
+  transition: width 150ms ease;
+}
+nav .menu-navigator .menu li:hover::after, nav .menu-navigator .menu li:focus::after {
+  width: 100%;
 }
 nav .menu-navigator .menu li.active {
   font-weight: bold;
-  text-decoration: underline;
+}
+nav .menu-navigator .menu li.active:after {
+  width: 100%;
 }
 nav .menu-toggle {
   position: relative;
@@ -120,6 +140,34 @@ nav.open .menu-toggle span:nth-child(2) {
 }
 nav.open .menu-toggle span:nth-child(3) {
   transform: rotate(-45deg);
+}
+@media (min-width: 31rem) {
+  nav .logo-container {
+    width: 5.5rem;
+  }
+  nav .menu-navigator {
+    position: unset;
+    visibility: visible;
+    clip-path: unset;
+    width: unset;
+    height: unset;
+    background-color: unset;
+  }
+  nav .menu-navigator .menu {
+    flex-direction: row;
+    font-size: 1rem;
+    color: var(--clr-dark);
+    gap: 1.5rem;
+    font-weight: 500;
+  }
+  nav .menu-navigator .menu li:after {
+    margin-top: 0.2rem;
+    background-color: var(--clr-dark);
+    height: 1px;
+  }
+  nav .menu-toggle {
+    display: none;
+  }
 }
 
 img {
