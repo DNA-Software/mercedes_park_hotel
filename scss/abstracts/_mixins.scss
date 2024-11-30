@@ -1,0 +1,37 @@
+// Mixins para los distintos dispositivos
+@mixin mobile {
+  @media (max-width: 47.9375rem) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 48rem) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 64rem) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: 90rem) {
+    @content;
+  }
+}
+
+// Mixins para media queries personalizadas
+@mixin min-media-query($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin max-media-query($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
