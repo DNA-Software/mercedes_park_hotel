@@ -46,11 +46,21 @@ a {
   }
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-bg);
+  transition: box-shadow 250ms ease;
+}
+header.scrolled {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 }
 nav .logo-container {
   width: 3.5rem;
