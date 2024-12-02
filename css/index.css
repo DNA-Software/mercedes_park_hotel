@@ -28,8 +28,14 @@ nav {
 #landing-view {
   display: grid;
   grid-template-columns: minmax(0, 14.75rem) minmax(0, 14.75rem) 1fr 1fr;
-  grid-template-rows: calc(100vh - 4.375rem - 1.5rem);
+  grid-template-rows: calc(100vh - 4.375rem - 1rem);
   gap: 1rem;
+  max-width: calc(100% - 2rem);
+}
+@media (min-width: 31rem) {
+  #landing-view {
+    grid-template-rows: calc(100vh - 5.85rem - 1rem);
+  }
 }
 #landing-view #presentation {
   grid-column: 1/5;
@@ -39,6 +45,31 @@ nav {
   padding: 1rem;
   color: white;
 }
+#landing-view #presentation h1 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+#landing-view #presentation .quote {
+  display: none;
+}
+#landing-view #presentation .description {
+  color: rgb(228, 228, 228);
+  font-size: 14px;
+}
+#landing-view #presentation .button {
+  display: inline-block;
+  margin-top: 0.75rem;
+}
+#landing-view #presentation .button button {
+  background-color: var(--clr-gold);
+  border: 1px solid var(--clr-gold);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
 #landing-view #presentation #carrusel-cards {
   display: none;
 }
@@ -47,15 +78,29 @@ nav {
   grid-row: 1/2;
   border-radius: 1rem;
   overflow: hidden;
+  background-color: var(--clr-dark);
 }
 #landing-view #carrusel-active-card div {
   height: 100%;
   width: 100%;
 }
+#landing-view #carrusel-active-card #carrusel-image-parent {
+  background-color: red;
+  position: relative;
+  height: 75%;
+}
 #landing-view #carrusel-active-card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+#landing-view #carrusel-active-card #carrusel-card-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(180deg, rgba(24, 18, 17, 0) 0%, rgb(24, 18, 17) 100%);
 }
 #landing-view #carrusel-card-description {
   display: none;

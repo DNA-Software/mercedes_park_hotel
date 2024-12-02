@@ -108,15 +108,14 @@
       <article id="presentation">
         <h1>Mercedes Park Hotel</h1>
 
-        <div><em>"El placer de descansar en la cuna de la Calle Angosta"</em></div>
+        <div class="quote"><em>"El placer de descansar en la cuna de la Calle Angosta"</em></div>
 
-        <div>
+        <div class="description">
           <p>Escápate a la comodidad y el encanto de Mercedes Park Hotel, el lugar ideal para familias en el corazón de
             Villa Mercedes. Disfruta de un ambiente acogedor con habitaciones amplias y modernas, desayuno incluido cada
             mañana, y una refrescante piscina para toda la familia.</p>
 
-          <a href="#" hreflang="ES" target="_self" rel="noopener noreferrer"
-            title="Contacto"><button>Contacto</button></a>
+          <a class="button" href="#" hreflang="ES" target="_self" rel="noopener noreferrer" title="Ir a la página de contacto"><button>Contacto</button></a>
         </div>
 
         <!-- <div id="stats-container">
@@ -162,8 +161,9 @@
       <article id="carrusel-active-card">
         <!-- Para facilitar el desarrollo del carrusel, sugiero que el texto este encima de la imagen y no sea un background del div -->
         <div>
-          <div>
+          <div id="carrusel-image-parent">
             <img id="carrusel-card-image" src="" alt="">
+            <div id="carrusel-card-image-overlay"></div>
           </div>
           <p id="carrusel-card-description"></p>
         </div>
