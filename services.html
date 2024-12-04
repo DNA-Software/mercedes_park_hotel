@@ -13,6 +13,7 @@
   <link rel="icon" href="res/logomph.png" type="image/png">
 
   <link rel="stylesheet" href="css/global.min.css">
+  <link rel="stylesheet" href="css/generic-pages.css">
 
   <script src="https://kit.fontawesome.com/05e35e8e14.js" crossorigin="anonymous"></script>
 
@@ -102,19 +103,23 @@
   </header>
 
   <main>
-    <section id="services">
+    <div id="portrait-container" class="container">
       <picture>
-        <source media="(min-width:500px)" srcset="res/enviroment/frente-hotel-1.jpg">
-        <img src="res/enviroment/frente-hotel-2.jpg" alt="Mercedes Park Hotel" style="width:auto;">
+        <img src="res/pool/pileta-5.jpg" alt="Mercedes Park Hotel">
       </picture>
+    </div>
+    <section id="services" class="container">
+      
+      <article id="services-container" class="container page">
+        <div class="presentation">
+          <h1>Nuestros Servicios</h1>
+          <p>Contamos con una amplia variedad de servicios pensados para tu comodidad</p>
+        </div>
 
-      <article id="services-container">
-        <h1>Nuestros Servicios</h1>
-        <p>Contamos con una amplia variedad de servicios pensados para tu comodidad</p>
-
-        <div>
+        <div class="left-section">
           <h2>Dentro del espacio común</h2>
-          <div>
+          <span class="section-icon"></span>
+          <div class="section-content">
             <ul>
               <li>Desayuno Buffet de alta variedad</li>
               <li>Opciones de pago con tarjetas de débito y crédito</li>
@@ -122,18 +127,26 @@
               <li>Internet por cable o inalámbrico de excelente calidad</li>
               <li>Pileta exterior con reposeras</li>
             </ul>
-          </div>
-          <div id="comun-carrusel-container">
-            <img>
-            <div id="comun-carrusel-buttons">
+            <div id="comun-carrusel-container" class="carrusel">
+              <div class="carrusel-bkg"></div>
+              <img class="container">
+              <div id="comun-carrusel-buttons" class="carrusel-buttons-container">
+              </div>
             </div>
           </div>
         </div>
 
 
-        <div>
+        <div class="right-section">
           <h2>Servicios para habitación</h2>
-          <div>
+          <span class="section-icon"></span>
+          <div class="section-content">
+            <div id="room-carrusel-container" class="carrusel">
+              <div class="carrusel-bkg"></div>
+              <img class="container">
+              <div id="room-carrusel-buttons" class="carrusel-buttons-container">
+              </div>
+            </div>
             <ul>
               <li>Aire acondicionado</li>
               <li>Servicio de lavanderia</li>
@@ -144,32 +157,29 @@
               <li>Frigobar y Sommier tipo "King"</li>
             </ul>
           </div>
-          <div id="room-carrusel-container">
-            <img>
-            <div id="room-carrusel-buttons">
-            </div>
-          </div>
         </div>
 
 
-        <div>
+        <div class="left-section">
           <h2>Cochera cubierta</h2>
-          <div>
+          <span class="section-icon"></span>
+          <div class="section-content">
             <ul>
               <li>Cochera cubierta ante el clima</li>
               <li>Monitoreo 24/7 para mayor seguridad</li>
               <li>Amplio espacio para guardar tu vehiculo</li>
               <li>Servicio sujeto a disponibilidad</li>
             </ul>
-          </div>
-          <div id="garage-carrusel-container">
-            <img>
-            <div id="garage-carrusel-buttons">
+            <div id="garage-carrusel-container" class="carrusel">
+              <div class="carrusel-bkg"></div>
+              <img class="container">
+              <div id="garage-carrusel-buttons" class="carrusel-buttons-container">
+              </div>
             </div>
           </div>
         </div>
 
-        <p>Tu comodidad es <spam>nuestra</spam> prioridad</p>
+        <p class="pie">Tu comodidad es <strong>nuestra</strong> prioridad</p>
       </article>
     </section>
   </main>

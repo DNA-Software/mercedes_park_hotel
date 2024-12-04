@@ -5,13 +5,17 @@
       "alt" : "confiteria Mercedes Park Hotel"
     },
     {
-      "src" : "res/enviroment/comedor-general-3.jpg",
+      "src" : "res/enviroment/comedor-general-5.jpg",
       "alt" : "comedor Mercedes Park Hotel"
     },
     {
-      "src" : "res/enviroment/confiteria-general-6.jpg",
-      "alt" : "habitaciones Mercedes Park Hotel"
+      "src" : "res/pool/pileta-1.jpg",
+      "alt" : "pileta Mercedes Park Hotel"
+    },
+    {
+      "src" : "res/enviroment/comedor-general-4.jpg",
+      "alt" : "comedor Mercedes Park Hotel"
     }
   ],
-  "totalRows" : "3"
+  "totalRows" : "4"
 }

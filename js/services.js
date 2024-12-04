@@ -129,7 +129,7 @@ function garageMove(index){
 
 function desplazamientoGarage(){
   garageTimeout = setTimeout(() => {
-    if(garageIndex == garageIndex - 1)
+    if(garageIndex == garageTotal - 1)
       garageIndex = 0;
     else
       garageIndex++;
