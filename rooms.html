@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,50 +103,57 @@
   </header>
 
   <main>
-    <section id="rooms">
-      <div id="portrait-container" class="container">
-        <picture>
-          <img src="res/enviroment/frente-hotel-2.jpg" alt="Mercedes Park Hotel" style="width:auto;">
-        </picture>
-      </div>
+    <div id="portrait-container" class="container">
+      <picture>
+        <img src="res/rooms/habitacion-doble-10.jpg" alt="Mercedes Park Hotel">
+      </picture>
+    </div>
+    <section id="rooms" class="container">
+      <article id="room-container" class="container page">
+        <div class="presentation">
+          <h1>Habitaciones</h1>
+          <p>Conoce la variedad de habitaciones que tenemos para ofrecerte</p>
+        </div>
 
-      <article id="room-container">
-        <h1>NHabitaciones</h1>
-        <p>Conoce la variedad de habitaciones que tenemos para ofrecerte</p>
-
-        <div>
-          <div>
-            <span>Check-in 12:00 hs</span>
+        <div class="check-container">
+          <div class="check-bkg">
+            <i class="fa fa-clock"></i><br>
+            <span>Check-in<br/>12:00 hs</span>
           </div>
-          <div>
-            <span>Check-out 10:00 hs</span>
+          <div class="check-bkg">
+            <i class="fa fa-clock"></i><br>
+            <span>Check-out<br/>10:00 hs</span>
           </div>
         </div>
 
-        <div>
-          <div>
-            <h2>Standar</h2>
+        <div class="left-section">
+          <h2>Standar</h2>
+          <span class="section-icon"></span>
+          <div class="section-content">
             <ul>
               <li>1 Ambiente de 13 metros cuadrados</li>
               <li>Incluye television, servicio de lavanderia y aire acondicionado</li>
             </ul>
-          </div>
-          <div id="first-carrusel-container">
-            <img>
-            <div id="first-carrusel-buttons">
+            <div id="first-carrusel-container" class="carrusel">
+              <div class="carrusel-bkg"></div>
+              <img class="container">
+              <div id="first-carrusel-buttons" class="carrusel-buttons-container">
+              </div>
             </div>
           </div>
         </div>
 
 
-        <div>
-          <div id="second-carrusel-container">
-            <img>
-            <div id="second-carrusel-buttons">
+        <div class="right-section">
+          <h2>Ejecutivas</h2>
+          <span class="section-icon"></span>
+          <div class="section-content">
+            <div id="second-carrusel-container" class="carrusel">
+              <div class="carrusel-bkg"></div>
+              <img class="container">
+              <div id="second-carrusel-buttons" class="carrusel-buttons-container">
+              </div>
             </div>
-          </div>
-          <div>
-            <h2>Ejecutivas</h2>
             <ul>
               <li>1 Ambiente de 18 metros</li>
               <li>Incluye television, servicio de lavanderia, frigobar y aire acondicionado</li>
@@ -154,84 +162,98 @@
         </div>
 
 
-        <div>
-          <div>
-            <h2>Suite</h2>
+        <div class="left-section">
+          <h2>Suite</h2>
+          <span class="section-icon"></span>
+          <div class="section-content">
             <ul>
               <li>2 Ambientes, 30 metros cuadrados</li>
               <li>Incluye television, servicio de lavanderia, frigobar y aire acondicionado</li>
             </ul>
-          </div>
-          <div id="third-carrusel-container">
-            <img>
-            <div id="third-carrusel-buttons">
+            <div id="third-carrusel-container" class="carrusel">
+              <div class="carrusel-bkg"></div>
+              <img class="container">
+              <div id="third-carrusel-buttons" class="carrusel-buttons-container">
+              </div>
             </div>
           </div>
         </div>
 
-        <p>El hotel ofrece servicio de desayuno buffet incluido en la tarifa, asi tambien la confiteria y el uso del frigobar, piscina, internet, lavanderia y cochera (Sujeta a disponibilidad)</p>
+        <p class="pie">El hotel ofrece servicio de desayuno buffet incluido en la tarifa, asi tambien la confiteria y el
+          uso del
+          frigobar, piscina, internet, lavanderia y cochera (Sujeta a disponibilidad)</p>
       </article>
     </section>
   </main>
   <footer>
-     
+
     <div class="footer-content">
-     <div class="col-1">
-       <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
-       <div class="logo-container">
-         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
-           <defs>
-             <style>
-               .cls-1 {
-                 font-family: PlayfairDisplay-BlackItalic, 'Playfair Display';
-                 font-size: 12.3px;
-                 font-style: italic;
-                 font-weight: 800;
-               }
-         
-               .cls-1, .cls-2 {
-                 fill: #000;
-               }
-         
-               .cls-2 {
-                 stroke-width: 0px;
-               }
-             </style>
-           </defs>
-           <g id="Layer_1-2" data-name="Layer 1">
-             <text class="cls-1" transform="translate(.58 20.66)"><tspan x="0" y="0">MPH</tspan></text>
-             <g>
-               <polygon class="cls-2" points="16.06 7.38 16.5 8.76 17.95 8.76 16.78 9.61 17.23 10.99 16.06 10.14 14.88 10.99 15.33 9.61 14.16 8.76 15.61 8.76 16.06 7.38"/>
-               <polygon class="cls-2" points="19.61 8.84 19.87 9.66 20.73 9.66 20.04 10.17 20.3 10.99 19.61 10.48 18.91 10.99 19.18 10.17 18.48 9.66 19.34 9.66 19.61 8.84"/>
-               <polygon class="cls-2" points="12.39 8.84 12.66 9.66 13.52 9.66 12.83 10.17 13.09 10.99 12.39 10.48 11.7 10.99 11.96 10.17 11.27 9.66 12.13 9.66 12.39 8.84"/>
-             </g>
-             <path class="cls-2" d="M6.51,11.36c.03-8.67,14.93-11.13,18.49-3.45.53,1.07.77,2.33.49,3.45h-.2c-.61-2.11-2.07-3.53-3.72-4.57-3.34-2.28-7.93-2.52-11.45-.38-1.78,1.01-3.25,2.77-3.41,4.95h-.2Z"/>
-             <path class="cls-2" d="M14.16,3.05c.03-1.77,1.55-3.15,3.24-3.04,1.61.11,2.9,1.55,2.82,3.23-.71-.23-1.72-.48-2.95-.53-1.29-.05-2.36.14-3.11.34Z"/>
-           </g>
-         </svg>
-       </div>
-       <!-- FIN SVG LOGO -->
-       <p>
-         Mercedes Park Hotel es un establecimiento hotelero categoría 3 estrellas. Ubicado a dos cuadras del microcentro villamercedino, en San Martín 220 (entre León Guillet y Avenida Pringles)
-       </p>
-     </div>
-     <nav class="list-container">
-       <span>HOTEL</span>
-       <ul id="ul-map-site">
-         <li><a href="index.html">Inicio</a></li>
-         <li><a href="services.html">Servicio</a></li>
-         <li><a href="rooms.html">Habitaciones</a></li>
-         <li><a href="activities.html">Turismo</a></li>
-       </ul>
-     </nav>
-     <div class="list-container">
-       <span>CONTACTO</span>
-       <i><i class="fas fa-map-marker-alt"></i> Villa Mercedes, San Luis, Argentina</i>
-       <i><i class="fas fa-phone-alt"></i> +54 9 11 1234-5678</i>
-       <i><i class="fas fa-envelope"></i> 2f9vZ@example.com</i>
-     </div>
-   </div>
-   <p>Copyright © Mercedes Park Hotel | Powered by DNA</p>
+      <div class="col-1">
+        <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
+        <div class="logo-container">
+          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
+            <defs>
+              <style>
+                .cls-1 {
+                  font-family: PlayfairDisplay-BlackItalic, 'Playfair Display';
+                  font-size: 12.3px;
+                  font-style: italic;
+                  font-weight: 800;
+                }
+
+                .cls-1,
+                .cls-2 {
+                  fill: #000;
+                }
+
+                .cls-2 {
+                  stroke-width: 0px;
+                }
+              </style>
+            </defs>
+            <g id="Layer_1-2" data-name="Layer 1">
+              <text class="cls-1" transform="translate(.58 20.66)">
+                <tspan x="0" y="0">MPH</tspan>
+              </text>
+              <g>
+                <polygon class="cls-2"
+                  points="16.06 7.38 16.5 8.76 17.95 8.76 16.78 9.61 17.23 10.99 16.06 10.14 14.88 10.99 15.33 9.61 14.16 8.76 15.61 8.76 16.06 7.38" />
+                <polygon class="cls-2"
+                  points="19.61 8.84 19.87 9.66 20.73 9.66 20.04 10.17 20.3 10.99 19.61 10.48 18.91 10.99 19.18 10.17 18.48 9.66 19.34 9.66 19.61 8.84" />
+                <polygon class="cls-2"
+                  points="12.39 8.84 12.66 9.66 13.52 9.66 12.83 10.17 13.09 10.99 12.39 10.48 11.7 10.99 11.96 10.17 11.27 9.66 12.13 9.66 12.39 8.84" />
+              </g>
+              <path class="cls-2"
+                d="M6.51,11.36c.03-8.67,14.93-11.13,18.49-3.45.53,1.07.77,2.33.49,3.45h-.2c-.61-2.11-2.07-3.53-3.72-4.57-3.34-2.28-7.93-2.52-11.45-.38-1.78,1.01-3.25,2.77-3.41,4.95h-.2Z" />
+              <path class="cls-2"
+                d="M14.16,3.05c.03-1.77,1.55-3.15,3.24-3.04,1.61.11,2.9,1.55,2.82,3.23-.71-.23-1.72-.48-2.95-.53-1.29-.05-2.36.14-3.11.34Z" />
+            </g>
+          </svg>
+        </div>
+        <!-- FIN SVG LOGO -->
+        <p>
+          Mercedes Park Hotel es un establecimiento hotelero categoría 3 estrellas. Ubicado a dos cuadras del
+          microcentro villamercedino, en San Martín 220 (entre León Guillet y Avenida Pringles)
+        </p>
+      </div>
+      <nav class="list-container">
+        <span>HOTEL</span>
+        <ul id="ul-map-site">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Servicio</a></li>
+          <li><a href="rooms.html">Habitaciones</a></li>
+          <li><a href="activities.html">Turismo</a></li>
+        </ul>
+      </nav>
+      <div class="list-container">
+        <span>CONTACTO</span>
+        <i><i class="fas fa-map-marker-alt"></i> Villa Mercedes, San Luis, Argentina</i>
+        <i><i class="fas fa-phone-alt"></i> +54 9 11 1234-5678</i>
+        <i><i class="fas fa-envelope"></i> 2f9vZ@example.com</i>
+      </div>
+    </div>
+    <p>Copyright © Mercedes Park Hotel | Powered by DNA</p>
   </footer>
 </body>
+
 </html>

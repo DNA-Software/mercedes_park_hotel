@@ -168,4 +168,188 @@ picture img{
   text-align: center;
   font-size: large;
   margin: 1.5rem;
+  font-style: italic;
+}
+
+/**/
+.check-container{
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: var(--clr-primary);
+}
+
+.check-container .check-bkg{
+  background-color: var(--clr-bg);
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 40%;
+  max-width: 40%;
+}
+
+.turismo{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.turismo article h3{
+  background-color: var(--clr-primary);
+  font-family: "Playfair Display", serif;
+  color: var(--clr-gold);
+  padding: 0.5rem;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: .5rem;
+}
+
+.turismo article h4{
+  margin: 1rem;
+}
+
+.turismo article p{
+  margin: 1rem;;
+}
+
+.turismo article a{
+  color: var(--clr-gold);
+  font-weight: bold;
+}
+/* media para 48 rem*/
+@media (min-width: 48rem){
+  .page {
+    top: -5.5rem;
+  }
+
+  .presentation h1{
+    font-size: x-large;
+  }
+
+  .left-section > h2{
+    width: 60%;
+    margin-top: 2rem;
+  }
+
+  .right-section > h2{
+    width: 60%;
+    margin-left: auto;
+    margin-top: 2rem;
+  }
+
+  picture img{
+    border-radius: 1rem;
+    max-height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .left-section > .section-content{
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+
+  .right-section > .section-content{
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+
+  .right-section .section-content ul{
+    border-left: none;
+    border-right: .2rem solid var(--clr-primary);
+    text-align: end;
+    padding-right: .5rem;
+  }
+
+  .carrusel{
+    width: 70%;
+    height: auto;
+  }
+
+  .check-container .check-bkg{
+    background-color: var(--clr-bg);
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 15%;
+    max-width: 15%;
+  }
+
+  .check-bkg i{
+    font-size: larger;
+  }
+}
+
+.turismo article h3{
+  width: 50%;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 64rem){
+  .page {
+    top: -10rem;
+  }
+
+  picture img{
+    border-radius: 1rem;
+    max-height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .carrusel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40vh;
+  }
+
+  
+
+  .right-section .section-content ul{
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 1.5rem;
+  }
+
+  .left-section .section-content ul{
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 1.5rem;
+  }
+}
+
+
+@media (min-width: 90rem){
+  .page {
+    top: -8.5rem;
+    width: 90%;
+  }
+
+  picture img{
+    max-height: 55vh;
+  }
+
+  .section-content ul{
+    width: 40%;
+    max-width: 40%;
+  }
+
+  .left-section > h2{
+    width: 50%;
+  }
+
+  .right-section > h2{
+    width: 50%;
+  }
+
+  .carrusel{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    max-height: 40vh;
+  }
 }
