@@ -16,9 +16,19 @@ header {
       max-width: calc(100% - 2rem);
     }
 
-    // @include desktop {
-    //   max-width: 80rem;
-    // }
+    @include min-media-query(55.625rem) {
+      max-width: calc(100% - 4rem);
+      gap: 2rem;
+    }
+
+    @include min-media-query(63.75rem) {
+      max-width: calc(100% - 6rem);
+      gap: 2.5rem;
+    }
+
+    @include min-media-query(1120px) {
+      max-width: 64rem;
+    }
   }
 }
 
@@ -45,6 +55,24 @@ nav {
     grid-template-rows: calc(100vh - 5.85rem - 1rem); // 100vh - altura del nav - margen
   }
 
+  @include min-media-query(55.625rem) {
+    max-width: calc(100% - 4rem);
+    gap: 2rem;
+  }
+
+  @include min-media-query(63.75rem) {
+    max-width: calc(100% - 6rem);
+    gap: 2.5rem;
+  }
+
+  @include min-media-query(1120px) {
+    max-width: calc(100% - 8rem);
+  }
+
+  @include min-media-query(1600px) {
+    max-width: 90rem;
+  }
+
   #presentation {
     grid-column: 1 / 5;
     grid-row: 1 / 2;
@@ -60,6 +88,9 @@ nav {
       padding: 0;
       color: var(--clr-dark);
       position: relative;
+
+      display: flex;
+      flex-direction: column
     }
 
     h1 {
@@ -70,13 +101,13 @@ nav {
       line-height: 1;
 
       @include tablet {
-        font-size: 4rem;
+        font-size: 3.75rem;
         display: block;
         text-wrap: nowrap;
         grid-column: 1 / 4;
         z-index: 3;
         position: absolute;
-        top: 3rem;
+        top: 2rem;
         color: white;
         font-weight: 500;
 
@@ -99,17 +130,17 @@ nav {
     .quote {
       display: none;
       font-family: "Playfair Display", serif;
-      margin-top: 8.5rem;
-      font-size: 2rem;
+      margin-top: 7.15rem;
+      font-size: 1.5rem;
       color: var(--clr-gold);
       position: relative;
 
       &::before {
         content: "";
         position: absolute;
-        width: calc(100% + 2rem);
-        height: calc(100% + 1rem);
-        right: 0;
+        width: 40rem;
+        height: calc(100% + 2rem);
+        right: -1.5rem;
         top: 50%;
         transform: translateY(-50%);
         background-color: var(--clr-dark);
@@ -129,7 +160,23 @@ nav {
       @include tablet {
         color: inherit;
         font-size: 16px;
-        margin-top: 1.25rem;
+        margin-top: 2.25rem;
+
+        p {
+          margin-left: 1rem;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            top: 0;
+            left: -1rem;
+            background-color: var(--clr-gold);
+          }
+        }
+
       }
     }
 
@@ -151,6 +198,7 @@ nav {
 
       @include tablet {
         display: flex;
+        margin-top: auto;
       }
     }
   }
@@ -181,7 +229,7 @@ nav {
 
 
     #carrusel-image-parent {
-      background-color: red;
+      // background-color: red;
       position: relative;
       height: 75%;
 
