@@ -2,6 +2,30 @@
 @import "../abstracts/_variables.scss";
 @import "../abstracts/_mixins.scss";
 
+.container {
+  display: grid;
+
+  @include tablet {
+    max-width: calc(100% - 2rem);
+  }
+
+  @include min-media-query(55.625rem) {
+    max-width: calc(100% - 4rem);
+  }
+
+  @include min-media-query(63.75rem) {
+    max-width: calc(100% - 6rem);
+  }
+
+  @include min-media-query(1120px) {
+    max-width: calc(100% - 8rem);
+  }
+
+  @include min-media-query(1600px) {
+    max-width: 90rem;
+  }
+}
+
 header {
   @include tablet {
     background-color: transparent;
@@ -338,5 +362,72 @@ nav {
 }
 
 #services-view {
-  margin-top: 5rem;
+  text-align: center;
+
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-dark);
+    margin-bottom: 1.25rem;
+  }
+
+  #services-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include tablet {
+      gap: 1.5rem;
+      width: 100%;
+    }
+  }
+
+  .grid-item {
+    background-color: #F3E6D3;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    color: var(--clr-secondary);
+    width: 14rem;
+    border-radius: 12px;
+
+    i {
+      font-size: 2.5rem;
+    }
+
+    @include tablet {
+      min-width: 12rem;
+      width: 100%;
+      flex: 1;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 50%;
+    //   height: 100%;
+    //   background-color: #F3E6D3;
+    //   z-index: -1;
+    //   border-radius: 12px;
+    // }
+    }
+  }
+
+  @include tablet {
+    text-align: left;
+  }
 }
