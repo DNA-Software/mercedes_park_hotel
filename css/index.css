@@ -207,12 +207,40 @@ nav {
 }
 #landing-view #presentation #carrusel-cards {
   display: none;
+  margin-top: auto;
+  gap: 0.75rem;
+  align-items: end;
 }
 @media (min-width: 48rem) {
   #landing-view #presentation #carrusel-cards {
     display: flex;
-    margin-top: auto;
   }
+}
+#landing-view #presentation #carrusel-cards picture {
+  border-radius: 1rem;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  transition: flex 0.3s ease, height 0.3s ease;
+  height: 11rem;
+  cursor: pointer;
+}
+#landing-view #presentation #carrusel-cards picture.active {
+  flex: 1.5;
+  height: 14.5rem;
+}
+#landing-view #presentation #carrusel-cards picture.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+}
+#landing-view #presentation #carrusel-cards picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 #landing-view #carrusel-active-card {
   grid-column: 1/5;
@@ -276,6 +304,14 @@ nav {
 @media (min-width: 48rem) {
   #landing-view #carrusel-card-description {
     display: block;
+  }
+}
+@media (min-height: 48.125rem) {
+  #landing-view #presentation h1 {
+    top: 6rem;
+  }
+  #landing-view #presentation .quote {
+    margin-top: 11.15rem;
   }
 }
 

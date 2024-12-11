@@ -200,10 +200,42 @@ nav {
 
     #carrusel-cards {
       display: none;
+      margin-top: auto;
+      gap: 0.75rem;
+      align-items: end;
 
       @include tablet {
         display: flex;
-        margin-top: auto;
+      }
+
+      picture {
+        border-radius: 1rem;
+        overflow: hidden;
+        flex: 1;
+        display: flex;
+        transition: flex 0.3s ease, height 0.3s ease;
+        height: 11rem;
+        cursor: pointer;
+
+        &.active {
+          flex: 1.5;
+          height: 14.5rem;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 150%;
+          }
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -234,7 +266,6 @@ nav {
 
 
     #carrusel-image-parent {
-      // background-color: red;
       position: relative;
       height: 75%;
 
@@ -274,6 +305,16 @@ nav {
 
     @include tablet {
       display: block;
+    }
+  }
+
+  @include min-height-media-query(48.125rem) {
+    #presentation h1 {
+      top: 6rem;
+    }
+
+    #presentation .quote {
+      margin-top: 11.15rem;
     }
   }
 }
