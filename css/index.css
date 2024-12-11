@@ -35,7 +35,12 @@ header .container {
 }
 @media (min-width: 1120px) {
   header .container {
-    max-width: 64rem;
+    max-width: calc(100% - 8rem);
+  }
+}
+@media (min-width: 1600px) {
+  header .container {
+    max-width: 90rem;
   }
 }
 
@@ -186,6 +191,7 @@ nav {
     top: 0;
     left: -1rem;
     background-color: var(--clr-gold);
+    border-radius: 5px;
   }
 }
 #landing-view #presentation .button {

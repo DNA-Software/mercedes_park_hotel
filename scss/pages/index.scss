@@ -27,7 +27,11 @@ header {
     }
 
     @include min-media-query(1120px) {
-      max-width: 64rem;
+      max-width: calc(100% - 8rem);
+    }
+
+    @include min-media-query(1600px) {
+      max-width: 90rem;
     }
   }
 }
@@ -174,6 +178,7 @@ nav {
             top: 0;
             left: -1rem;
             background-color: var(--clr-gold);
+            border-radius: 5px;
           }
         }
 
