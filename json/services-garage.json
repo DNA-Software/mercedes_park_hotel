@@ -1,17 +1,13 @@
 {
   "items":[
     {
-      "src" : "res/enviroment/confiteria-general-7.jpg",
-      "alt" : "confiteria Mercedes Park Hotel"
+      "src" : "res/enviroment/cochera-2.jpg",
+      "alt" : "cochera Mercedes Park Hotel"
     },
     {
-      "src" : "res/enviroment/comedor-general-3.jpg",
-      "alt" : "comedor Mercedes Park Hotel"
-    },
-    {
-      "src" : "res/enviroment/confiteria-general-6.jpg",
-      "alt" : "habitaciones Mercedes Park Hotel"
+      "src" : "res/enviroment/cochera-1.jpg",
+      "alt" : "cochera Mercedes Park Hotel"
     }
   ],
-  "totalRows" : "3"
+  "totalRows" : "2"
 }
