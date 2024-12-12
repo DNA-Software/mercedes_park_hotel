@@ -35,7 +35,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 64rem) {
+@media (min-width: 48rem) {
   .container {
     max-width: calc(100% - 6rem);
   }
@@ -51,6 +51,7 @@ header {
   top: 0;
   background-color: var(--clr-bg);
   transition: box-shadow 250ms ease;
+  z-index: 10;
 }
 header.scrolled {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

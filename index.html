@@ -14,6 +14,7 @@
   <link rel="icon" href="res/logomph.png" type="image/png">
 
   <link rel="stylesheet" href="css/global.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
 
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/navToggleHandler.js" defer></script>
@@ -46,62 +47,59 @@
 
   <header>
     <!-- Con este nav fijate que vas a poder implementar ambos planteos (Sugiero que sea fixed al top y un background transparente. Al hacer scroll podria tomar color) -->
-    <nav class="container">
-
-      <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
-      <div class="logo-container">
-        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
-          <defs>
-            <style>
-              .cls-1 {
-                font-family: PlayfairDisplay-BlackItalic, 'Playfair Display';
-                font-size: 12.3px;
-                font-style: italic;
-                font-weight: 800;
-              }
-
-              .cls-2 {
-                stroke-width: 0px;
-              }
-            </style>
-          </defs>
-          <g id="Layer_1-2" data-name="Layer 1">
-            <text class="cls-1" transform="translate(.58 20.66)">
-              <tspan x="0" y="0">MPH</tspan>
-            </text>
-            <g>
-              <polygon class="cls-2"
-                points="16.06 7.38 16.5 8.76 17.95 8.76 16.78 9.61 17.23 10.99 16.06 10.14 14.88 10.99 15.33 9.61 14.16 8.76 15.61 8.76 16.06 7.38" />
-              <polygon class="cls-2"
-                points="19.61 8.84 19.87 9.66 20.73 9.66 20.04 10.17 20.3 10.99 19.61 10.48 18.91 10.99 19.18 10.17 18.48 9.66 19.34 9.66 19.61 8.84" />
-              <polygon class="cls-2"
-                points="12.39 8.84 12.66 9.66 13.52 9.66 12.83 10.17 13.09 10.99 12.39 10.48 11.7 10.99 11.96 10.17 11.27 9.66 12.13 9.66 12.39 8.84" />
+    <div class="container">
+      <nav>
+        <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
+        <div class="logo-container">
+          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23.75">
+            <defs>
+              <style>
+                .cls-1 {
+                  font-family: PlayfairDisplay-BlackItalic, 'Playfair Display';
+                  font-size: 12.3px;
+                  font-style: italic;
+                  font-weight: 800;
+                }
+                .cls-2 {
+                  stroke-width: 0px;
+                }
+              </style>
+            </defs>
+            <g id="Layer_1-2" data-name="Layer 1">
+              <text class="cls-1" transform="translate(.58 20.66)">
+                <tspan x="0" y="0">MPH</tspan>
+              </text>
+              <g>
+                <polygon class="cls-2"
+                  points="16.06 7.38 16.5 8.76 17.95 8.76 16.78 9.61 17.23 10.99 16.06 10.14 14.88 10.99 15.33 9.61 14.16 8.76 15.61 8.76 16.06 7.38" />
+                <polygon class="cls-2"
+                  points="19.61 8.84 19.87 9.66 20.73 9.66 20.04 10.17 20.3 10.99 19.61 10.48 18.91 10.99 19.18 10.17 18.48 9.66 19.34 9.66 19.61 8.84" />
+                <polygon class="cls-2"
+                  points="12.39 8.84 12.66 9.66 13.52 9.66 12.83 10.17 13.09 10.99 12.39 10.48 11.7 10.99 11.96 10.17 11.27 9.66 12.13 9.66 12.39 8.84" />
+              </g>
+              <path class="cls-2"
+                d="M6.51,11.36c.03-8.67,14.93-11.13,18.49-3.45.53,1.07.77,2.33.49,3.45h-.2c-.61-2.11-2.07-3.53-3.72-4.57-3.34-2.28-7.93-2.52-11.45-.38-1.78,1.01-3.25,2.77-3.41,4.95h-.2Z" />
+              <path class="cls-2"
+                d="M14.16,3.05c.03-1.77,1.55-3.15,3.24-3.04,1.61.11,2.9,1.55,2.82,3.23-.71-.23-1.72-.48-2.95-.53-1.29-.05-2.36.14-3.11.34Z" />
             </g>
-            <path class="cls-2"
-              d="M6.51,11.36c.03-8.67,14.93-11.13,18.49-3.45.53,1.07.77,2.33.49,3.45h-.2c-.61-2.11-2.07-3.53-3.72-4.57-3.34-2.28-7.93-2.52-11.45-.38-1.78,1.01-3.25,2.77-3.41,4.95h-.2Z" />
-            <path class="cls-2"
-              d="M14.16,3.05c.03-1.77,1.55-3.15,3.24-3.04,1.61.11,2.9,1.55,2.82,3.23-.71-.23-1.72-.48-2.95-.53-1.29-.05-2.36.14-3.11.34Z" />
-          </g>
-        </svg>
-      </div>
-      <!-- FIN SVG LOGO -->
-
-      <div class="menu-navigator">
-        <ul class="menu">
-          <li class="menu-item active"><a href="index.html">Inicio</a></li>
-          <li class="menu-item"><a href="services.html">Servicios</a></li>
-          <li class="menu-item"><a href="rooms.html">Habitaciones</a></li>
-          <li class="menu-item"><a href="activities.html">Turismo</a></li>
-        </ul>
-      </div>
-
-      <button type="button" class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-    </nav>
+          </svg>
+        </div>
+        <!-- FIN SVG LOGO -->
+        <div class="menu-navigator">
+          <ul class="menu">
+            <li class="menu-item active"><a href="index.html">Inicio</a></li>
+            <li class="menu-item"><a href="services.html">Servicios</a></li>
+            <li class="menu-item"><a href="rooms.html">Habitaciones</a></li>
+            <li class="menu-item"><a href="activities.html">Turismo</a></li>
+          </ul>
+        </div>
+        <button type="button" class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -110,18 +108,17 @@
       <article id="presentation">
         <h1>Mercedes Park Hotel</h1>
 
-        <div><em>"El placer de descansar en la cuna de la Calle Angosta"</em></div>
+        <div class="quote"><em>"El placer de descansar en la cuna de la Calle Angosta"</em></div>
 
-        <div>
+        <div class="description">
           <p>Escápate a la comodidad y el encanto de Mercedes Park Hotel, el lugar ideal para familias en el corazón de
             Villa Mercedes. Disfruta de un ambiente acogedor con habitaciones amplias y modernas, desayuno incluido cada
             mañana, y una refrescante piscina para toda la familia.</p>
 
-          <a href="#" hreflang="ES" target="_self" rel="noopener noreferrer"
-            title="Contacto"><button>Contacto</button></a>
+          <a class="button" href="#" hreflang="ES" target="_self" rel="noopener noreferrer" title="Ir a la página de contacto"><button>Contacto</button></a>
         </div>
 
-        <div id="stats-container">
+        <!-- <div id="stats-container">
           <div id="stats-service-years">
             <span>7</span>
             <span>Años de servicio</span>
@@ -134,7 +131,7 @@
             <span>+1500</span>
             <span>Estadías felices</span>
           </div>
-        </div>
+        </div> -->
 
         <!-- Aca van a estar las imagenes de los slides -->
         <div id="carrusel-cards">
@@ -144,28 +141,29 @@
             data-description="Sumérgete en nuestra espectacular piscina, el corazón de nuestro hotel, rodeada de exuberantes jardines y un entorno de tranquilidad absoluta."
             class="active picture-container">
             <source media="(min-width:500px)" srcset="res/enviroment/frente-hotel-1.jpg">
-            <img src="res/enviroment/frente-hotel-2.jpg" alt="Mercedes Park Hotel" style="width:auto;">
+            <img src="res/enviroment/frente-hotel-2.jpg" alt="Mercedes Park Hotel">
           </picture>
           <picture
             data-description="Sumérgete en nuestra espectacular piscina, el corazón de nuestro hotel, rodeada de exuberantes jardines y un entorno de tranquilidad absoluta."
             class="picture-container">
             <source media="(min-width:500px)" srcset="res/pool/pileta-8.png">
-            <img src="res/pool/pileta-nocturna-1.jpg" alt="Piscina Mercedes Park Hotel" style="width:auto;">
+            <img src="res/pool/pileta-nocturna-1.jpg" alt="Piscina Mercedes Park Hotel">
           </picture>
           <picture
             data-description="Sumérgete en nuestra espectacular piscina, el corazón de nuestro hotel, rodeada de exuberantes jardines y un entorno de tranquilidad absoluta."
             class="picture-container">
             <source media="(min-width:465px)" srcset="res/rooms/habitacion-doble-5.jpg">
-            <img src="res/rooms/habitacion-doble-4.jpg" alt="Habitaciones Mercedes Park Hotel" style="width:auto;">
+            <img src="res/rooms/habitacion-doble-4.jpg" alt="Habitaciones Mercedes Park Hotel">
           </picture>
         </div>
       </article>
 
       <article id="carrusel-active-card">
         <!-- Para facilitar el desarrollo del carrusel, sugiero que el texto este encima de la imagen y no sea un background del div -->
-        <div>
-          <div>
+        <div id="carrusel-parent">
+          <div id="carrusel-image-parent">
             <img id="carrusel-card-image" src="" alt="">
+            <div id="carrusel-card-image-overlay"></div>
           </div>
           <p id="carrusel-card-description"></p>
         </div>
@@ -173,50 +171,57 @@
 
     </section>
 
-    <section id="services-view" class="container">
-      <h2>Servicios</h2>
-      <article id="services-grid-container">
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-        <div class="grid-item">
-          <div class="bkg-services"></div>
-          <i></i>
-          <span>service description</span>
-        </div>
-      </article>
+    <section id="services-view">
+
+      <div class="container">
+
+        <h2>Servicios</h2>
+
+        <article id="services-grid-container">
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Desayuno buffet</span>
+          </div>
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-water-ladder"></i>
+            <span>Piscina</span>
+          </div>
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-wifi"></i>
+            <span>Wifi de alta velocidad</span>
+          </div>
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-temperature-low"></i>
+            <span>Climatización</span>
+          </div>
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Excelente ubicación</span>
+          </div>
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-shirt"></i>
+            <span>Lavanderia</span>
+          </div>
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-square-parking"></i>
+            <span>Parking cubierto</span>
+          </div>
+          <div class="grid-item">
+            <div class="bkg-services"></div>
+            <i class="fa-solid fa-utensils"></i>
+            <span>Confitería</span>
+          </div>
+        </article>
+
+      </div>
+
     </section>
 
     <section id="location" class="container">

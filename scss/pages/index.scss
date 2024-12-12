@@ -1,0 +1,433 @@
+// Importar abstractos
+@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixins.scss";
+
+.container {
+  display: grid;
+
+  @include tablet {
+    max-width: calc(100% - 2rem);
+  }
+
+  @include min-media-query(55.625rem) {
+    max-width: calc(100% - 4rem);
+  }
+
+  @include min-media-query(63.75rem) {
+    max-width: calc(100% - 6rem);
+  }
+
+  @include min-media-query(1120px) {
+    max-width: calc(100% - 8rem);
+  }
+
+  @include min-media-query(1600px) {
+    max-width: 90rem;
+  }
+}
+
+header {
+  @include tablet {
+    background-color: transparent;
+    transition: box-shadow 350ms ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--clr-bg);
+      z-index: -1;
+      transform: translateY(-100%);
+      transition: transform 250ms ease;
+    }
+
+    &.scrolled::before {
+      transform: translateY(0);
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: minmax(0, 29.5rem) 1fr;
+    gap: 1rem;
+
+    @include tablet {
+      max-width: calc(100% - 2rem);
+    }
+
+    @include min-media-query(55.625rem) {
+      max-width: calc(100% - 4rem);
+      gap: 2rem;
+    }
+
+    @include min-media-query(63.75rem) {
+      max-width: calc(100% - 6rem);
+      gap: 2.5rem;
+    }
+
+    @include min-media-query(1120px) {
+      max-width: calc(100% - 8rem);
+    }
+
+    @include min-media-query(1600px) {
+      max-width: 90rem;
+    }
+  }
+}
+
+nav {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    grid-column: 1 / 2;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+#landing-view {
+  display: grid;
+  grid-template-columns: minmax(0, 14.75rem) minmax(0, 14.75rem) 1fr 1fr;
+  grid-template-rows: calc(100vh - 4.375rem - 1rem); // 100vh - altura del nav - margen
+  gap: 1rem;
+  max-width: calc(100% - 2rem);
+
+  @include min-media-query(31rem) {
+    grid-template-rows: calc(100vh - 5.85rem - 1rem); // 100vh - altura del nav - margen
+  }
+
+  @include min-media-query(55.625rem) {
+    max-width: calc(100% - 4rem);
+    gap: 2rem;
+  }
+
+  @include min-media-query(63.75rem) {
+    max-width: calc(100% - 6rem);
+    gap: 2.5rem;
+  }
+
+  @include min-media-query(1120px) {
+    max-width: calc(100% - 8rem);
+  }
+
+  @include min-media-query(1600px) {
+    max-width: 90rem;
+  }
+
+  #presentation {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    z-index: 2;
+    align-self: flex-end;
+    padding: 1rem;
+    color: white;
+
+    @include tablet {
+      grid-column: 1 / 3;
+      height: 100%;
+      align-self: center;
+      padding: 0;
+      color: var(--clr-dark);
+      position: relative;
+
+      display: flex;
+      flex-direction: column
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      margin-bottom: 0.75rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1;
+
+      @include tablet {
+        font-size: 3.75rem;
+        display: block;
+        text-wrap: nowrap;
+        grid-column: 1 / 4;
+        z-index: 3;
+        position: absolute;
+        top: 2rem;
+        color: white;
+        font-weight: 500;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: calc(100% + 4rem);
+          height: calc(100% + 2rem);
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          background-color: var(--clr-primary);
+          z-index: -1;
+          border-radius: 0.75rem;
+        }
+      }
+    }
+
+    .quote {
+      display: none;
+      font-family: "Playfair Display", serif;
+      margin-top: 7.15rem;
+      font-size: 1.5rem;
+      color: var(--clr-gold);
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40rem;
+        height: calc(100% + 2rem);
+        right: -1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--clr-dark);
+        z-index: -1;
+        border-radius: 0.75rem;
+      }
+
+      @include tablet {
+        display: block;
+      }
+    }
+
+    .description {
+      color: rgb(228, 228, 228);
+      font-size: 14px;
+
+      @include tablet {
+        color: inherit;
+        font-size: 16px;
+        margin-top: 2.25rem;
+
+        p {
+          margin-left: 1rem;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            top: 0;
+            left: -1rem;
+            background-color: var(--clr-gold);
+            border-radius: 5px;
+          }
+        }
+
+      }
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 0.75rem;
+
+      button {
+        background-color: var(--clr-gold);
+        border: 1px solid var(--clr-gold);
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+      }
+    }
+
+    #carrusel-cards {
+      display: none;
+      margin-top: auto;
+      gap: 0.75rem;
+      align-items: end;
+
+      @include tablet {
+        display: flex;
+      }
+
+      picture {
+        border-radius: 1rem;
+        overflow: hidden;
+        flex: 1;
+        display: flex;
+        transition: flex 0.3s ease, height 0.3s ease;
+        height: 11rem;
+        cursor: pointer;
+
+        &.active {
+          flex: 1.5;
+          height: 14.5rem;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 150%;
+          }
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  #carrusel-active-card {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--clr-dark);
+
+    @include tablet {
+      grid-column: 3 / 5;
+      height: calc(100vh - 2 * 1rem);
+      margin-top: -4.85rem;
+    }
+
+    div {
+      height: 100%;
+      width: 100%;
+    }
+
+    #carrusel-parent {
+      @include tablet {
+        position: relative;
+      }
+    }
+
+
+    #carrusel-image-parent {
+      position: relative;
+      height: 75%;
+
+      @include tablet {
+        height: 95%;
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    #carrusel-card-image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 15%;
+      background: linear-gradient(180deg, rgba(24, 18, 17, 0) 0%, rgba(24, 18, 17, 1) 100%);
+
+      @include tablet {
+        height: 6rem;
+      }
+    }
+  }
+
+  #carrusel-card-description {
+    display: none;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    font-size: 14px;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  @include min-height-media-query(48.125rem) {
+    #presentation h1 {
+      top: 6rem;
+    }
+
+    #presentation .quote {
+      margin-top: 11.15rem;
+    }
+  }
+}
+
+#services-view {
+  text-align: center;
+
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-dark);
+    margin-bottom: 1.25rem;
+  }
+
+  #services-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include tablet {
+      gap: 1.5rem;
+      width: 100%;
+    }
+  }
+
+  .grid-item {
+    background-color: #F3E6D3;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    color: var(--clr-secondary);
+    width: 14rem;
+    border-radius: 12px;
+
+    i {
+      font-size: 2.5rem;
+    }
+
+    @include tablet {
+      min-width: 12rem;
+      width: 100%;
+      flex: 1;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 50%;
+    //   height: 100%;
+    //   background-color: #F3E6D3;
+    //   z-index: -1;
+    //   border-radius: 12px;
+    // }
+    }
+  }
+
+  @include tablet {
+    text-align: left;
+  }
+}

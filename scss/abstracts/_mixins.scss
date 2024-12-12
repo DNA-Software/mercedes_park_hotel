@@ -35,3 +35,10 @@
     @content;
   }
 }
+
+// Mixins para media queries de altura personalizadas
+@mixin min-height-media-query($breakpoint) {
+  @media (min-height: $breakpoint) {
+    @content;
+  }
+}
