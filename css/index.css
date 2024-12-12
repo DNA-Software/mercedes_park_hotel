@@ -367,12 +367,52 @@ nav {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+@media (min-width: 48rem) {
+  #services-view .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
 #services-view h2 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: 700;
   color: var(--clr-dark);
   margin-bottom: 1.25rem;
+}
+@media (min-width: 48rem) {
+  #services-view h2 {
+    color: var(--clr-bg);
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+  }
+  #services-view h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 4rem);
+    height: 0.5rem;
+    top: -1rem;
+    left: 45%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--clr-dark);
+    z-index: -1;
+    border-radius: 3px;
+  }
+  #services-view h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 4rem);
+    height: calc(100% + 1rem);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--clr-dark);
+    z-index: -1;
+    border-radius: 0.75rem;
+  }
 }
 #services-view #services-grid-container {
   display: flex;

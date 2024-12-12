@@ -367,6 +367,11 @@ nav {
   .container {
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    @include tablet {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
   }
 
   h2 {
@@ -375,6 +380,41 @@ nav {
     font-weight: 700;
     color: var(--clr-dark);
     margin-bottom: 1.25rem;
+
+    @include tablet {
+      color: var(--clr-bg);
+      position: relative;
+      width: fit-content;
+      margin-bottom: 2rem;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% + 4rem);
+        height: 0.5rem;
+        top: -1rem;
+        left: 45%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: var(--clr-dark);
+        z-index: -1;
+        border-radius: 3px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% + 4rem);
+        height: calc(100% + 1rem);
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: var(--clr-dark);
+        z-index: -1;
+        border-radius: 0.75rem;
+      }
+    }
   }
 
   #services-grid-container {
