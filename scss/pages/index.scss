@@ -478,6 +478,19 @@ nav {
 
   .container {
     padding: 3rem 0;
+
+    @include tablet {
+      padding: 3.5rem 0;
+    }
+  }
+
+  .location-header {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2.25rem;
+    }
   }
 
   h2 {
@@ -487,45 +500,50 @@ nav {
     color: var(--clr-bg);
     margin-bottom: 1rem;
 
-    // @include tablet {
-    //   color: var(--clr-bg);
-    //   position: relative;
-    //   width: fit-content;
-    //   margin-bottom: 2rem;
+    @include tablet {
+      color: var(--clr-bg);
+      position: relative;
+      width: fit-content;
+      margin-bottom: 0;
+      z-index: 1;
 
-    //   &::before {
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     width: calc(100% + 4rem);
-    //     height: 0.5rem;
-    //     top: -1rem;
-    //     left: 45%;
-    //     transform: translateX(-50%) translateY(-50%);
-    //     background-color: var(--clr-dark);
-    //     z-index: -1;
-    //     border-radius: 3px;
-    //   }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% + 4rem);
+        height: 0.5rem;
+        top: -1rem;
+        left: 45%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: var(--clr-secondary);
+        z-index: -1;
+        border-radius: 3px;
+      }
 
-    //   &::after {
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     width: calc(100% + 4rem);
-    //     height: calc(100% + 1rem);
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translateX(-50%) translateY(-50%);
-    //     background-color: var(--clr-dark);
-    //     z-index: -1;
-    //     border-radius: 0.75rem;
-    //   }
-    // }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% + 4rem);
+        height: calc(100% + 1rem);
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: var(--clr-secondary);
+        z-index: -1;
+        border-radius: 0.75rem;
+      }
+    }
   }
 
   a {
     display: inline-block;
-    margin-bottom: 1.25rem
+    margin-bottom: 1.25rem;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
 
   button {

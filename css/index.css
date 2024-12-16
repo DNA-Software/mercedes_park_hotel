@@ -464,6 +464,19 @@ nav {
 #location .container {
   padding: 3rem 0;
 }
+@media (min-width: 48rem) {
+  #location .container {
+    padding: 3.5rem 0;
+  }
+}
+@media (min-width: 48rem) {
+  #location .location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.25rem;
+  }
+}
 #location h2 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
@@ -471,9 +484,49 @@ nav {
   color: var(--clr-bg);
   margin-bottom: 1rem;
 }
+@media (min-width: 48rem) {
+  #location h2 {
+    color: var(--clr-bg);
+    position: relative;
+    width: fit-content;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+  #location h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 4rem);
+    height: 0.5rem;
+    top: -1rem;
+    left: 45%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--clr-secondary);
+    z-index: -1;
+    border-radius: 3px;
+  }
+  #location h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 4rem);
+    height: calc(100% + 1rem);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--clr-secondary);
+    z-index: -1;
+    border-radius: 0.75rem;
+  }
+}
 #location a {
   display: inline-block;
   margin-bottom: 1.25rem;
+}
+@media (min-width: 48rem) {
+  #location a {
+    margin-bottom: 0;
+  }
 }
 #location button {
   background-color: var(--clr-gold);
