@@ -568,3 +568,130 @@ nav {
     }
   }
 }
+
+#instalaciones {
+  text-align: center;
+  background-color: var(--clr-dark);
+
+  .container {
+    padding: 3rem 0;
+
+    @include tablet {
+      padding: 3.5rem 0;
+    }
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-bg);
+    margin-bottom: 1rem;
+  }
+
+  #carrusel-instalaciones-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    button {
+      position: absolute;
+      z-index: 2;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5rem;
+      border: none;
+      background-color: var(--clr-gold);
+      color: var(--clr-dark);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--clr-bg);
+      }
+
+      &#prev {
+        left: 0.75rem;
+      }
+
+      &#next {
+        right: 0.75rem;
+      }
+    }
+
+    @include tablet {
+      justify-self: center;
+      max-width: 400px;
+    }
+  }
+
+  #carrusel-instalaciones {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 3rem);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    div {
+      height: 25rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
+      &#card-instalaciones-prev {
+        transform: translateX(-1rem) scale(0.75);
+        transform-origin: left;
+        opacity: 0.75;
+
+        @include tablet {
+          transform: translateX(-4rem) scale(0.75);
+        }
+      }
+
+      &#card-instalaciones-current {
+        transform: translateX(0) scale(1);
+        z-index: 1;
+        opacity: 1;
+      }
+
+      &#card-instalaciones-next {
+        transform: translateX(1rem) scale(0.75);
+        transform-origin: right;
+        opacity: 0.75;
+
+        @include tablet {
+          transform: translateX(4rem) scale(0.75);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include tablet {
+        height: 30rem;
+      }
+    }
+  }
+
+  #carrusel-instalaciones-description {
+    margin-top: 1rem;
+    color: var(--clr-bg);
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+#contact {
+  background-color: red;
+}
+
+footer {
+  background-color: red;
+}

@@ -243,32 +243,36 @@
 
     </section>
 
-    <section id="instalaciones" class="container">
-      <h2>Instalaciones</h2>
-      <article id="carrusel-instalaciones-container">
-        <button id="prev">atras</button>
-        <div id="carrusel-instalaciones">
-          <div id="card-instalaciones-prev"><img></div>
-          <div id="card-instalaciones-current"><img></div>
-          <div id="card-instalaciones-next"><img></div>
-        </div>
-        <button id="next">adelante</button>
-      </article>
-      <p id="carrusel-instalaciones-description"></p>
+    <section id="instalaciones">
+      <div class="container">
+        <h2>Instalaciones</h2>
+        <article id="carrusel-instalaciones-container">
+          <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <div id="carrusel-instalaciones">
+            <div id="card-instalaciones-prev"><img></div>
+            <div id="card-instalaciones-current"><img></div>
+            <div id="card-instalaciones-next"><img></div>
+          </div>
+          <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </article>
+        <p id="carrusel-instalaciones-description"></p>
+      </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2>Contacto</h2>
-      <article>
-        <form action="" method="post" name="contact-form" id="contact-form">
-          <div id="form-errors-container"></div>
-          <label for="mail">Correo</label>
-          <input type="text" name="mail" id="inp-mail" placeholder="ejemplo@correo.com">
-          <label for="message">Mensaje</label>
-          <textarea name="message" id="inp-message" cols="30" rows="10"></textarea>
-        </form>
-        <button type="submit" form="contact-form">Reservar</button>
-      </article>
+    <section id="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <article>
+          <form action="" method="post" name="contact-form" id="contact-form">
+            <div id="form-errors-container"></div>
+            <label for="mail">Correo</label>
+            <input type="text" name="mail" id="inp-mail" placeholder="ejemplo@correo.com">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="inp-message" cols="30" rows="10"></textarea>
+          </form>
+          <button type="submit" form="contact-form">Reservar</button>
+        </article>
+      </div>
     </section>
 
   </main>
