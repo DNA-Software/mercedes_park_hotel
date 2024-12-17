@@ -262,15 +262,6 @@ nav {
         &.active {
           flex: 1.5;
           height: 14.5rem;
-
-          &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 150%;
-            height: 150%;
-          }
         }
 
         img {

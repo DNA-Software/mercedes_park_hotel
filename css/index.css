@@ -274,14 +274,6 @@ nav {
   flex: 1.5;
   height: 14.5rem;
 }
-#landing-view #presentation #carrusel-cards picture.active::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150%;
-  height: 150%;
-}
 #landing-view #presentation #carrusel-cards picture img {
   height: 100%;
   width: 100%;
