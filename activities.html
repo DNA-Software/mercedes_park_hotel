@@ -13,6 +13,7 @@
   <link rel="icon" href="res/logomph.png" type="image/png">
 
   <link rel="stylesheet" href="css/global.min.css">
+  <link rel="stylesheet" href="css/generic.min.css">
   <link rel="stylesheet" href="css/generic-pages.css">
 
   <script type="text/javascript" src="js/navToggleHandler.js" defer></script>
@@ -153,8 +154,7 @@
 
 
   <footer>
-
-    <div class="footer-content">
+    <div class="container footer-content">
       <div class="col-1">
         <!-- SVG del logo (Por motivos de SEO se ingresa directamente el SVG) -->
         <div class="logo-container">
@@ -170,7 +170,7 @@
 
                 .cls-1,
                 .cls-2 {
-                  fill: #000;
+                  fill: #EDC484;
                 }
 
                 .cls-2 {
@@ -205,7 +205,7 @@
       </div>
       <nav class="list-container">
         <span>HOTEL</span>
-        <ul id="ul-map-site">
+        <ul id="nav-list" class="list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="services.html">Servicio</a></li>
           <li><a href="rooms.html">Habitaciones</a></li>
@@ -214,12 +214,18 @@
       </nav>
       <div class="list-container">
         <span>CONTACTO</span>
-        <i><i class="fas fa-map-marker-alt"></i> Villa Mercedes, San Luis, Argentina</i>
-        <i><i class="fas fa-phone-alt"></i> +54 9 11 1234-5678</i>
-        <i><i class="fas fa-envelope"></i> 2f9vZ@example.com</i>
+        <div id="contact-list" class="list">
+          <div><i><i class="fas fa-map-marker-alt"></i> Villa Mercedes, San Luis, Argentina</i></div>
+          <div><i><i class="fas fa-phone-alt"></i> +54 9 11 1234-5678</i></div>
+          <div><i><i class="fas fa-envelope"></i> 2f9vZ@example.com</i></div>
+        </div>
       </div>
+
     </div>
-    <p>Copyright © Mercedes Park Hotel | Powered by DNA</p>
+
+    <div class="copyright">
+      <p>Copyright © Mercedes Park Hotel | Powered by DNA</p>
+    </div>
   </footer>
 </body>
 

@@ -1,0 +1,21 @@
+// Importar abstractos
+@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixins.scss";
+
+.page {
+  position: relative;
+  top: -3.5rem;
+  background-color: #FCFCFC ;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 5;
+}
+
+footer {
+  margin-top: -10rem;
+  padding-top: 5rem;
+
+  @include desktop {
+    margin-top: -15rem;
+  }
+}
