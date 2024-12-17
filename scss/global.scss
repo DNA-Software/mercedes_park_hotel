@@ -207,8 +207,97 @@ nav {
 
 }
 
-// TODO: Borrar
 img {
   max-width: 100%;
   height: auto;
+}
+
+// Pie de página
+footer {
+  background-color: var(--clr-dark);
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+
+  // Copyright text
+  .copyright {
+    border-top: 2px solid #4D3C3A;
+    padding: 2rem 0;
+
+    p {
+      color: var(--clr-gold);
+      text-align: center;
+
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+    }
+  }
+
+  .container {
+    padding: 3rem 0;
+    color: var(--clr-gold);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: flex-start;
+
+      > * {
+        flex: 1;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .logo-container {
+    width: 5rem;
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+    padding: 0;
+
+    span {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    #nav-list li {
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--clr-bg);
+      }
+    }
+  }
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      align-items: flex-start;
+      flex: 1.5;
+    }
+
+    @include desktop {
+      flex: 2;
+    }
+  }
 }
