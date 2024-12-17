@@ -689,7 +689,74 @@ nav {
 }
 
 #contact {
-  background-color: red;
+  background-color: var(--clr-dark);
+  text-align: center;
+
+  .container {
+    background-color: var(--clr-bg);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+
+    @include min-media-query(44rem) {
+      max-width: 660px;
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-dark);
+    margin-bottom: 1rem;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    label {
+      margin-bottom: 0.5rem;
+      color: var(--clr-dark);
+    }
+
+    input, textarea {
+      width: 100%;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+  }
+
+  button {
+    background-color: var(--clr-secondary);
+    color: var(--clr-bg);
+    border: 1px solid var(--clr-secondary);
+    border-radius: .5rem;
+    padding: .75rem 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: all 0.150s ease;
+
+    &:hover {
+      background-color: var(--clr-bg);
+      color: var(--clr-secondary);
+    }
+  }
+
+  #form-errors-container {
+    margin-bottom: 1rem;
+    color: #e52929;
+  }
 }
 
 footer {

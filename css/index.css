@@ -657,7 +657,66 @@ nav {
 }
 
 #contact {
-  background-color: red;
+  background-color: var(--clr-dark);
+  text-align: center;
+}
+#contact .container {
+  background-color: var(--clr-bg);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+@media (min-width: 44rem) {
+  #contact .container {
+    max-width: 660px;
+    padding: 1.5rem 2rem;
+  }
+}
+#contact h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-dark);
+  margin-bottom: 1rem;
+}
+#contact #contact-form {
+  display: flex;
+  flex-direction: column;
+}
+#contact .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#contact .form-group label {
+  margin-bottom: 0.5rem;
+  color: var(--clr-dark);
+}
+#contact .form-group input, #contact .form-group textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+#contact button {
+  background-color: var(--clr-secondary);
+  color: var(--clr-bg);
+  border: 1px solid var(--clr-secondary);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+#contact button:hover {
+  background-color: var(--clr-bg);
+  color: var(--clr-secondary);
+}
+#contact #form-errors-container {
+  margin-bottom: 1rem;
+  color: #e52929;
 }
 
 footer {
