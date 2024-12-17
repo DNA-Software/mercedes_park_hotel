@@ -284,6 +284,10 @@ footer {
         color: var(--clr-bg);
       }
     }
+
+    @include tablet {
+      margin-top: 1.75rem;
+    }
   }
 
   .col-1 {

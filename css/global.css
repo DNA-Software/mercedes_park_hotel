@@ -248,6 +248,11 @@ footer .list-container #nav-list li {
 footer .list-container #nav-list li:hover {
   color: var(--clr-bg);
 }
+@media (min-width: 48rem) {
+  footer .list-container {
+    margin-top: 1.75rem;
+  }
+}
 footer .col-1 {
   display: flex;
   flex-direction: column;
