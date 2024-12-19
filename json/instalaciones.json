@@ -8,12 +8,12 @@
     {
       "src" : "res/enviroment/comedor-general-3.jpg",
       "alt" : "comedor Mercedes Park Hotel",
-      "description" : "Contamos con un amplio espacio para comer y disfrutar"
+      "description" : "Contamos con un amplio espacio para comer y disfrutar."
     },
     {
       "src" : "res/enviroment/cochera-1.jpg",
       "alt" : "cochera Mercedes Park Hotel",
-      "description" : "Podes guardar tu vehiculo en nuestro amplio estacionamiento techado"
+      "description" : "Podes guardar tu vehiculo en nuestro amplio estacionamiento techado (Sujeto a disponibilidad)"
     },
     {
       "src" : "res/rooms/habitacion-triple-2.jpg",
@@ -24,7 +24,12 @@
       "src" : "res/pool/pileta-5.jpg",
       "alt" : "pileta Mercedes Park Hotel",
       "description" : "Disfruta de nuestra pileta y reposeras en la comodidad de tu alojamiento"
+    },
+    {
+      "src" : "res/rooms/bathroom-5.jpeg",
+      "alt" : "pileta Mercedes Park Hotel",
+      "description" : "Contamos con baños amplios y privados para cada habitación. Con receptaculo de ducha o bañera."
     }
   ],
-  "totalRows" : "5"
+  "totalRows" : "6"
 }
