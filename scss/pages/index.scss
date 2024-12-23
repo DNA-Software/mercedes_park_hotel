@@ -109,6 +109,7 @@ nav {
   @include min-media-query(63.75rem) {
     max-width: calc(100% - 6rem);
     gap: 2.5rem;
+    min-height: 37.5rem;
   }
 
   @include min-media-query(1120px) {
