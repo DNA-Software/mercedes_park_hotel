@@ -141,13 +141,20 @@
   margin-bottom: 0.5rem;
 }
 
+.info-precios {
+  margin-top: 1.75rem;
+  text-align: center;
+  color: var(--clr-secondary);
+  font-size: 1.25rem;
+}
+
 .pie {
   font-family: "Playfair Display", serif;
   color: var(--clr-primary);
   text-align: center;
   font-size: large;
   margin: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-style: italic;
 }
 
