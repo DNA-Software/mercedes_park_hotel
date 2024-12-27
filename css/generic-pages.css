@@ -48,12 +48,13 @@
 }
 
 /**/
-.check-container{
+.check-container {
   margin: 1rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   color: var(--clr-primary);
+  gap: 1rem;
 }
 
 .check-container .check-bkg{
