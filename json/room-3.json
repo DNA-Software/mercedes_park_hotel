@@ -11,7 +11,11 @@
     {
       "src" : "res/rooms/bathroom-2.jpg",
       "alt" : "habitaciones Mercedes Park Hotel"
+    },
+    {
+      "src" : "res/rooms/habitacion-doble-5.jpg",
+      "alt" : "habitaciones Mercedes Park Hotel"
     }
   ],
-  "totalRows" : "3"
+  "totalRows" : "4"
 }
