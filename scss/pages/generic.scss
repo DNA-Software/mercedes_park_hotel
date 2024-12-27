@@ -138,6 +138,28 @@
   }
 }
 
+// Estilos de la tabla con los precios
+.tabla-precios {
+  width: 100%;
+  border: 1px solid var(--clr-secondary);
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+
+  th {
+    background-color: var(--clr-bg);
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 1px solid var(--clr-secondary);
+    color: var(--clr-secondary);
+  }
+
+  td {
+    padding: 0.5rem;
+    border: 1px solid var(--clr-secondary);
+    color: var(--clr-secondary);
+  }
+}
+
 .carrusel {
   position: relative;
   width: 100%;
