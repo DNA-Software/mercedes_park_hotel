@@ -191,24 +191,27 @@ function mostrarErrores(errors){ // Muestra los errores del formulario de contac
 
 function sendMail(mail, message){ // Esta funcion ocupa el envio del correo
   const data = {
-    service_id : '', // key del servicio
-    template_id : '', // key del template
-    user_id : "", // public key de la cuenta
-    template_params : {
-      mail : mail,
-      message : message
-    }
+    mail : mail,
+    message : message
   }
 
-  fetch('https://api.emailjs.com/api/v1.0/email/send', {
+  fetch('enviar.php', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  })
-    .then(res => console.log(res))
-    .catch(err => console.err(err));
+    body: data,
+    })
+    .then(response => response.text()) // Procesar la respuesta como texto
+    .then(data => {
+        if (data === 'success') {
+          alert('¡Mensaje enviado con éxito!');
+        } else {
+          alert('Error al enviar el mensaje.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error al enviar el mensaje.');
+    });
+
 }
 
 // CARGAR HANDLERS

@@ -1,0 +1,10 @@
+<FilesMatch \.p(hp|hp5|hp7|html)$>
+    SetHandler proxy:unix:/opt/php7-4/var/run/php-fpm/c2160095.sock|fcgi://c2160095
+</FilesMatch>
+
+# AddHandler x-httpd-php7-4 .php
+# AddHandler x-httpd-php8-0 .php
+# AddHandler x-httpd-php5-6 .php
+# AddHandler x-httpd-php7-3 .php
+RedirectMatch permanent ^/index.php/?$ http://mercedesparkhotel.com/mph/index.php/$1
+RedirectMatch permanent ^/index.html/?$ http://mercedesparkhotel.com/mph/index.php/$1
