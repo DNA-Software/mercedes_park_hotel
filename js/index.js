@@ -190,7 +190,7 @@ function mostrarErrores(errors){ // Muestra los errores del formulario de contac
 }
 
 function sendMail(mail, message){ // Esta funcion ocupa el envio del correo
-  const data = {
+  /*const data = {
     mail : mail,
     message : message
   }
@@ -210,7 +210,34 @@ function sendMail(mail, message){ // Esta funcion ocupa el envio del correo
     .catch(error => {
         console.error('Error:', error);
         alert('Error al enviar el mensaje.');
-    });
+    });*/
+    const data = {
+      service_id : 'service_18wldow', // key del servicio
+      template_id : 'template_16r99uu', // key del template
+      user_id : "3sDvy0Xa0JD67E4ub", // public key de la cuenta
+      template_params : {
+        mail : mail,
+        message : message
+      }
+    }
+  
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(res =>{
+        if(res.status == '200')
+          alert('El correo se envio exitosamente');
+        else  
+          alert('Error al enviar el correo. Intente mas tarde');
+      })
+      .catch(err => {
+        console.error(err);
+        alert('Error al enviar el correo. Intente mas tarde');
+      });
 
 }
 
