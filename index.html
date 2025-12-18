@@ -15,9 +15,11 @@
 
   <link rel="stylesheet" href="css/global.min.css">
   <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="css/holidayModal.css">
 
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/navToggleHandler.js" defer></script>
+  <script type="text/javascript" src="js/holidayModal.js" defer></script>
 
   <script src="https://kit.fontawesome.com/05e35e8e14.js" crossorigin="anonymous"></script>
 
@@ -44,6 +46,56 @@
 </head>
 
 <body>
+
+  <!-- HOLIDAY MODAL -->
+  <div id="holidayModal" class="modal-holiday">
+    <div class="modal-content-holiday promo-style">
+
+      <button class="close-modal-holiday">&times;</button>
+
+      <!-- HERO PROMO -->
+      <div class="promo-hero">
+        <div class="promo-overlay"></div>
+
+        <div class="promo-content">
+          <span class="promo-tag">PROMO</span>
+
+          <h2 class="promo-title">
+            3x2 <span>Noches</span>
+          </h2>
+
+          <p class="promo-dates">
+            Del <strong>26/12</strong> al <strong>01/01</strong>
+          </p>
+
+          <p class="promo-subtitle">
+            Te hospedás 3 noches<br>y pagás solo 2
+          </p>
+        </div>
+      </div>
+
+      <!-- DETAILS -->
+      <div class="promo-details">
+        <ul>
+          <li>Desayuno buffet</li>
+          <li>Pileta</li>
+          <li>Habitaciones climatizadas</li>
+          <li>Wi-Fi</li>
+          <li>Excelente ubicación</li>
+        </ul>
+
+        <button class="btn-reserve-holiday">
+          Reservar ahora
+        </button>
+
+        <p class="promo-note">
+          *Válido para nuevas reservas. Sujeto a disponibilidad.
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- END HOLIDAY MODAL -->
 
   <header>
     <!-- Con este nav fijate que vas a poder implementar ambos planteos (Sugiero que sea fixed al top y un background transparente. Al hacer scroll podria tomar color) -->

@@ -1,0 +1,325 @@
+/* ============================================
+   HOLIDAY MODAL STYLES
+   ============================================ */
+
+:root {
+  --clr-bg: #F5EEE4;
+  --clr-primary: #780524;
+  --clr-secondary: #52131E;
+  --clr-dark: #181211;
+  --clr-gold: #EDC484;
+  --clr-success: #27AE60;
+  --clr-holiday-green: #1D5C3D;
+  --clr-holiday-red: #C41E3A;
+}
+
+/* Modal Container */
+.modal-holiday {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.modal-holiday.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Modal Content */
+.modal-content-holiday {
+  background: linear-gradient(135deg, #F5EEE4 0%, #FFF9F0 100%);
+  padding: 0;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s ease-out;
+  border: 3px solid var(--clr-gold);
+  position: relative;
+  overflow: hidden;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content-holiday::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(195, 30, 58, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.modal-content-holiday::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(29, 92, 61, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Close Button */
+.close-modal-holiday {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--clr-gold);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  z-index: 10;
+}
+
+.close-modal-holiday:hover {
+  transform: rotate(90deg);
+  color: var(--clr-gold);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Reserve Button */
+.btn-reserve-holiday {
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, var(--clr-holiday-red) 0%, var(--clr-primary) 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(195, 30, 58, 0.3);
+}
+
+.btn-reserve-holiday:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(195, 30, 58, 0.5);
+  background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-holiday-red) 100%);
+}
+
+.btn-reserve-holiday:active {
+  transform: translateY(-1px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .modal-content-holiday {
+    width: 95%;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .modal-holiday-header h2 {
+    font-size: 26px;
+  }
+
+  .snowflakes-decoration {
+    gap: 10px;
+  }
+
+  .snowflakes-decoration i {
+    font-size: 18px;
+  }
+
+  .offer-badge {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+  }
+
+  .badge-text {
+    font-size: 40px;
+  }
+
+  .offer-title {
+    font-size: 18px;
+  }
+
+  .dates-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .date-divider {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 360px) {
+  .modal-content-holiday {
+    width: 98%;
+  }
+
+  .modal-holiday-header {
+    padding: 20px 15px;
+  }
+
+  .modal-holiday-body {
+    padding: 20px 15px;
+  }
+
+  .modal-holiday-footer {
+    padding: 15px;
+  }
+
+  .modal-holiday-header h2 {
+    font-size: 22px;
+  }
+
+  .offer-badge {
+    width: 90px;
+    height: 90px;
+  }
+
+  .badge-text {
+    font-size: 36px;
+  }
+
+  .feature-item {
+    font-size: 12px;
+  }
+}
+
+.promo-style {
+  padding: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 420px;
+}
+
+.promo-hero {
+  position: relative;
+  height: 420px;
+  background-image: url("../res/modal_background.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.promo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.2)
+  );
+}
+
+
+.promo-content {
+  position: relative;
+  color: #fff;
+  padding: 30px 25px;
+  z-index: 2;
+}
+
+.promo-tag {
+  color: #EDC484;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.promo-title {
+  font-size: 56px;
+  font-weight: 900;
+  margin: 10px 0 0;
+  line-height: 1;
+}
+
+.promo-title span {
+  font-size: 28px;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.promo-dates {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.promo-subtitle {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.promo-details {
+  padding: 20px 25px 25px;
+  background: #fff;
+  text-align: center;
+}
+
+.promo-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.promo-details li {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.promo-note {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #888;
+}
