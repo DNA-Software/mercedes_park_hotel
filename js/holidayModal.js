@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  //return;
   const modal = document.getElementById('holidayModal');
   const closeBtn = document.querySelector('.close-modal-holiday');
   const reserveBtn = document.querySelector('.btn-reserve-holiday');
